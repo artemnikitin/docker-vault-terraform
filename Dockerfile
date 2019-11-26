@@ -1,10 +1,10 @@
 FROM ubuntu:18.04
 
 ENV VAULT_VERSION 1.3.0
-ENV VAULT_ZIP vault_$VAULT_VERSION_linux_amd64.zip
+ENV VAULT_ZIP vault_${VAULT_VERSION}_linux_amd64.zip
 ENV VAULT_URL https://releases.hashicorp.com/vault/$VAULT_VERSION/$VAULT_ZIP
 ENV TERRAFORM_VERSION 0.12.16
-ENV TERRAFORM_ZIP terraform_$TERRAFORM_VERSION_linux_amd64.zip
+ENV TERRAFORM_ZIP terraform_${TERRAFORM_VERSION}_linux_amd64.zip
 ENV TERRAFORM_URL https://releases.hashicorp.com/terraform/$TERRAFORM_VERSION/$TERRAFORM_ZIP
 
 # Install prerequisites
